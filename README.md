@@ -12,3 +12,5 @@ remember to put between the plug calls and run `PlugInstall`... you know the dri
 
 if you have no idea what I'm talking about you should go find a vim plugin tutorial
 
+If you don't want to use the github repo you can use the
+[git.rawtext.club](https://git.rawtext.club/hedy/vim-bun) remote.
