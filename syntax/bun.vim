@@ -1,3 +1,10 @@
+" vim-bun -- syntax support for bun in (n)vim
+"
+" Partially referenced from https://github.com/fatih/vim-go
+"
+" note that a lot of the syntax/builtins aren't actually support *yet*
+
+
 " Quit when a (custom) syntax file was already loaded
 if exists("b:current_syntax")
   finish
