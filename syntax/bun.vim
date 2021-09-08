@@ -106,9 +106,9 @@ syn region    bunImport            start='import (' end=')' transparent fold con
 
 " var, const
 syn region    bunVar               start='var ('   end='^\s*)$' transparent fold
-                      \ contains=ALLBUT,bunParen,bunBlock,bunFunction,bunTypeName,bunReceiverType,bunReceiverVar,bunParamName,bunParamType,bunSimpleParams,bunPointerOperator
+                      \ contains=ALLBUT,bunParen,bunBlock,bunFunction,bunTypeName,bunParamName,bunParamType,bunSimpleParams,bunPointerOperator
 syn region    bunConst             start='const (' end='^\s*)$' transparent fold
-                      \ contains=ALLBUT,bunParen,bunBlock,bunFunction,bunTypeName,bunReceiverType,bunReceiverVar,bunParamName,bunParamType,bunSimpleParams,bunPointerOperator
+                      \ contains=ALLBUT,bunParen,bunBlock,bunFunction,bunTypeName,bunParamName,bunParamType,bunSimpleParams,bunPointerOperator
 
 " Single-line var, const, and import.
 syn match       bunSingleDecl        /\%(import\|var\|const\) [^(]\@=/ contains=bunImport,bunVar,bunConst
@@ -185,10 +185,6 @@ hi def link     bunFunction          Function
 "         \%([,\:.]\)\)\@=/hs=s+1
 " endif
 " hi def link    goField              Identifier
-
-" Variable Assignments
-syn match bunVarAssign /\v[_.[:alnum:]]+(,\s*[_.[:alnum:]]+)*\ze(\s*([-^+|^\/%&]|\*|\<\<|\>\>|\&\^)?\=[^=])/
-hi def link   bunVarAssign         Special
 
 " Variable Declarations
 syn match bunVarDefs /\v\w+(,\s*\w+)*\ze(\s*:\=)/
