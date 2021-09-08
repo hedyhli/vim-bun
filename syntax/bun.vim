@@ -25,7 +25,7 @@ hi def link     bunDeclaration       Keyword
 syn keyword     bunStatement         return break continue
 syn keyword     bunConditional       if else switch select
 syn keyword     bunLabel             case default
-syn keyword     bunRepeat            for
+syn keyword     bunRepeat            for while
 
 hi def link     bunStatement         Statement
 hi def link     bunConditional       Conditional
