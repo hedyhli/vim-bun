@@ -78,13 +78,8 @@ hi def link     bunEscapeError       Error
 
 " Strings and their contents
 syn cluster     bunStringGroup       contains=bunEscapeOctal,bunEscapeC,bunEscapeX,bunEscapeU,bunEscapeBigU,bunEscapeError
-" if bun#config#HighlightStringSpellcheck()
-"   syn region      bunString            start=+"+ skip=+\\\\\|\\"+ end=+"+ contains=@bunStringGroup,@Spell
-"   syn region      bunRawString         start=+`+ end=+`+ contains=@Spell
-" else
-"   syn region      bunString            start=+"+ skip=+\\\\\|\\"+ end=+"+ contains=@bunStringGroup
-"   syn region      bunRawString         start=+`+ end=+`+
-" endif
+syn region      bunString            start=+"+ skip=+\\\\\|\\"+ end=+"+ contains=@bunStringGroup
+syn region      bunRawString         start=+`+ end=+`+
 
 " TODO: format strings
 
