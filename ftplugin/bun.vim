@@ -4,9 +4,8 @@ if exists("b:did_ftplugin")
 let b:did_ftplugin = 1
 
 
+setlocal comments=:#
 setlocal commentstring=#\ %s
-
-" TODO: setlocal comments
 
 setlocal expandtab
 setlocal tabstop=4
